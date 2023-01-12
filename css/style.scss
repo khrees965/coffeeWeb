@@ -1,0 +1,391 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+li{
+    list-style: none;
+}
+ 
+ 
+    $color-dark: #000;
+    $color-primary: #ba8500;
+    $color-white: #FFF;
+    $color-grey-btn: #D8D8D8;
+    $color-text: #2B2B2B;
+    $color-handf: rgba(0, 0, 0, 0.89);
+
+    $font-family: "Source sans Pro", sans-serif;
+    $font-family2: "Roboto Slab", serif ;
+    $font-family3: "Oswald", sans-serif;
+
+    $fw100: normal;
+    $fw400: 400;
+    $fw600: 600;
+
+
+    $fs-xsmall: .812rem;
+    $fs-small: 1.125rem;
+    $fs-normal: 2rem;
+    $fs-large: 3.5rem;
+    $fs-xlarge: 6rem;
+
+    $lh: 1.7;
+
+    $tt-uppercase: uppercase;
+
+    $viewpoint: 100vh;
+// Utility classes
+
+.logo-img{
+    width: 3em;
+}
+
+.menu-btn{
+    width: 1.5em;
+    
+}
+
+.ff-source{
+    font-family: $font-family;
+}
+.ff-roboto{
+    font-family: $font-family2;
+}
+.ff-oswald{
+    font-family: $font-family3;
+}
+
+.color-dark{
+    color: $color-dark;
+}
+.color-white{
+    color: $color-white;
+}
+.text-color{
+    color: $color-text;
+}
+
+
+.fs-xsmall{
+    font-size: $fs-xsmall;
+}
+.fs-small{
+    font-size: $fs-small;
+}
+.fs-normal{
+    font-size: $fs-normal;
+}
+.fs-large{
+    font-size: $fs-large;
+}
+.fs-xlarge{
+    font-size: $fs-xlarge;
+}
+
+
+.fw-100{
+    font-weight: $fw100;
+}
+.fw-400{
+    font-weight: $fw400;
+}
+.fw-600{
+    font-weight: $fw600;
+}
+
+.lh{
+    line-height: 1.7;
+}
+
+.tt-uppercase{
+    text-transform: $tt-uppercase;
+}
+
+.vp{
+    height: 100vh;
+}
+
+.outline-dark-btn{
+    background-color: transparent;
+    border: 1px solid $color-grey-btn;
+    border-radius: 2rem;
+    color: $color-white;
+    font-size: $fs-xsmall;
+    font-weight: $fw600;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    text-transform: $tt-uppercase;
+    transition: .3s ease;
+    &:hover{
+        background-color: $color-white;
+        color: $color-dark;
+    }
+}
+
+.outline-light-btn{
+    background-color: transparent;
+    border: 1px solid $color-grey-btn;
+    border-radius: 2rem;
+    color: $color-dark;
+    font-size: $fs-xsmall;
+    font-weight: $fw600;
+    margin: 1rem;
+    padding: 1rem 2rem;
+    text-transform: $tt-uppercase;
+    transition: .3s ease;
+    &:hover{
+        background-color: $color-dark;
+        color: $color-white;
+    }
+}
+
+    .outline-form-btn{
+        background-color: $color-dark;
+        border: 1px solid $color-dark;
+        border-radius: 2rem;
+        color: $color-white;
+        font-size: $fs-xsmall;
+        font-weight: $fw600;
+        margin: 0;
+        padding: 1rem 2rem;
+        text-transform: $tt-uppercase;
+        transition: .3s ease;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.9);
+            color: $color-white;
+        }
+}
+
+
+// Navbar
+.navbar-dark{
+    background-color: $color-dark;
+}
+
+ .navbar-toggler{
+    background-color: transparent;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    &:focus{
+        outline: none;
+    }
+}
+
+
+// hero section
+.hero-container{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 90%;
+}
+
+.hero-items{
+    text-align: center;
+}
+
+.hero-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/images/hero-image.png) no-repeat center / cover;
+    height: 70vh;
+    max-width: 100%;
+}
+
+.summary{
+    align-items: center;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    margin: 2rem auto;
+    text-align: center;
+    width: 80%;
+
+    h5{
+        line-height: 1.4;
+        width: 90%;
+    }
+}
+
+// Menu
+
+.location-container{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: 62.5rem;
+    text-align: center;
+    width: 90%;
+}
+
+
+
+.location-section{
+    background: linear-gradient(rgba(0, 0, 0, 0.24), rgba(0, 0, 0, 0.24)), url(/images/menu-img.png) no-repeat center / cover;
+    height: 70vh;
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+
+
+
+
+// Newletter
+.newsletter{
+    width: 100%;
+
+    h3{
+        max-width: 50%;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+
+form{
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 1rem auto !important;
+    max-width: 50% !important;
+}
+
+
+
+.form-label{
+    font-family: $font-family !important;
+}
+
+.form-check-label{
+    font-family: $font-family !important;
+    font-size: $fs-xsmall;
+    
+}
+
+input[type=email]{
+    width: 100% !important;
+    
+    
+}
+
+.input-control-success{
+    color: aqua;
+} 
+
+// Footer
+
+
+
+footer{
+    align-items: center;
+    background-color: $color-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 20vh;
+    margin-top: auto;
+    text-align: center;
+
+    p{
+        color: rgb(139, 139, 139);
+        font-weight: $fw400;
+    }
+
+}
+
+
+.f-icons{
+    background-color: $color-white;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 2em;
+}
+
+.f-links{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+
+    a{
+        color: $color-white;
+        font-family: $font-family;
+        font-size: $fs-xsmall;
+        margin-right: 1rem;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: .3s ease;
+
+        &:hover{
+            color: $color-grey-btn;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media screen and(max-width:900px){
+    .hero-container{
+        h3{
+            font-size: $fs-small;
+        }
+        h1{
+            font-size: $fs-large;
+        }
+    }
+
+    .summary{
+        h5{
+            font-size: $fs-xsmall;
+        }
+        
+    }
+
+
+    .menu-section{
+        h2{
+            font-size: $fs-normal;
+        }
+        h3{
+            font-size: $fs-xsmall;
+        }
+    }
+
+    .location-section{
+        h1{
+            font-size: $fs-large;
+        }
+    }
+
+    .newsletter{
+        h2{
+            font-size: $fs-normal;
+        }
+        h3{
+            font-size: $fs-xsmall;
+        }
+    }
+    
+}
